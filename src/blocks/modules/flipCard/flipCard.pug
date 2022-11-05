@@ -1,0 +1,34 @@
+mixin flipCard 
+  .promo__slide.card.card--1
+    .card__3d
+
+      .card__front.card-front
+          p.card-front__text Мечтаешь уволиться с найма и стать самому себе боссом?
+          button.card-front__button(data-filter="card--1") Да!
+
+
+      .card__back.card-back
+
+          p.card-back__text Регистрируйся на курс и зарабатывай на арбитраже криптовалют!
+          a(href="#order-section").card-back__button Зарегистрироваться
+
+mixin flipCard(frontText, filterName)
+  .card.promo__slide(class=attributes.class)
+    .card__3d
+      .card__front.card-front
+        img.card-front__line(src="../img/front-line.png", alt="front")
+        h3.card-front__text= frontText
+        button.card-front__button(data-filter= filterName) Да!
+      .card__back.card-back
+        img(src="../img/back-line.png", alt="back")
+        p.card-back__text Регистрируйся на курс и зарабатывай на арбитраже криптовалют!
+        a(href="#order-section").card-back__button Зарегистрироваться
+
+
+section.promo
+    .promo__slider
+        +flipCard('Мечтаешь уволиться с найма и стать самому себе боссом?', "card--1")(class="card--1")
+        +flipCard('Устал жить от зарплаты до зарплаты?', "card--2")(class="card--2")
+        +flipCard('Нуждаешься в дополнительном источнике дохода?', "card--3")(class="card--3")
+        +flipCard('Жаждешь инвестировать, но пока не хватает знаний?', "card--4")(class="card--4")
+        +flipCard('Хочешь пробить финансовый потолок?', "card--5")(class="card--5")

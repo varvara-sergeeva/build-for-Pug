@@ -1,0 +1,140 @@
+.promo {
+  margin: 50px auto;
+  background-color: #333;
+}
+
+.promo__slider {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+	column-gap: 40px;
+	padding: 50px 0;
+}
+
+.card {
+	position: relative;
+  width: 250px;
+  height: 340px;
+  border-radius: 15px;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+.card__3d {
+  position: relative;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  transition: transform 2s;
+  transform-style: preserve-3d;
+}
+
+.card::before {
+  content: url("../img/cube.png");
+  position: absolute;
+  top: -20%;
+  left: -20%;
+	z-index: 2;
+	transition: transform 2s;
+}
+
+.card::after {
+	content: url("../img/right-coin.png");
+  position: absolute;
+  top: -15%;
+  left: 80%;
+	z-index: 3;
+	transition: transform 2s;
+}
+
+.card.active .card__3d {
+  transform: rotateY(.5turn);
+}
+.active.card::before {
+	transform: translateX(220px) rotate(180deg) scale(0.8);
+}
+.active.card::after {
+	transform: translateX(-220px) rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 15px;
+  border: 3px solid rgba(247, 247, 249, 1);
+  box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.55);
+}
+
+.card-front {
+  background-image: url("../img/front.jpg");
+  background-size: cover;
+	&__line {
+		position: relative;
+		top: 36px;
+		left: 0;
+		backface-visibility: hidden;
+	}
+}
+
+.card-back {
+	img {
+		position: relative;
+		top: 35px;
+		left: -9px;
+		backface-visibility: hidden;
+	}
+}
+
+.card-front__button,
+.card-back__button {
+  display: flex;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  width: 195px;
+	padding: 13px 0;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  text-decoration: none;
+  background-color: transparent;
+  background-image: url('../img/btn.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  color: #000;
+  cursor: pointer;
+  text-transform: uppercase;
+  transform:  translateZ(1.5rem);
+}
+
+.card-back__button {
+  padding: 15px;
+  margin-top: 0;
+}
+
+.card-front__text {
+  transform:  translateZ(2rem);
+	font-weight: 900;
+	font-size: 22px;
+	line-height: 27px;
+  color: rgba(247, 247, 249, 1);
+	padding: 0 25px;
+}
+
+.card-back {
+  transform: rotateY(.5turn);
+  background-image: url("../img/back.jpg");
+  background-size: cover;
+}
