@@ -20,6 +20,18 @@ mixin elem(elemTitle, elemText, elemBtn)
 
 
 
+//-protein
+//-grass
+//-corn
+
+mixin checkboxImage()
+	.checkbox-img
+			input#protein-1(type='checkbox')
+			label(for='protein-1')
+				img(src='../img/protein-1.png' alt="protein food")
+				p Мясо
+
+
 .section__block.section__block--1
 	.date__module 
 		#dateOutput
@@ -28,6 +40,8 @@ mixin elem(elemTitle, elemText, elemBtn)
 	+block
 	+block
 	+block
+	br
+	+checkboxImage
 
 
 .section__block.section__block--2
