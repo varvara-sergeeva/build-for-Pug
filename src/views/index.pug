@@ -6,11 +6,15 @@ block variables
 
 block content
 	include ../blocks/modules/header/header
-	include ../blocks/modules/flipCard/flipCard
-	include ../blocks/modules/horizScrollSection/horizScrollSection
+	//-include ../blocks/modules/flipCard/flipCard
+	//-include ../blocks/modules/horizScrollSection/horizScrollSection
 	include ../blocks/modules/blocks/blocks
+	include ../blocks/modules/reviews/reviews
+	//-include ../blocks/modules/slider-rev/slider-rev
+	include ../blocks/modules/timer/timer
 	include ../blocks/modules/footer/footer
 
 block scripts
 	script(src="js/vendor.js")
+	script(src='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js')
 	script(src="js/main.js")
