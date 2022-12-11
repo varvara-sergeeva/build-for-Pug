@@ -159,3 +159,50 @@ input[type="checkbox"]:checked.checkbox-img {
 	border: 1px solid red;
 	background-color: coral;
 }
+
+
+//! svg test
+
+.svg__wrapper {
+	width: 150px;
+	height: 150px;
+	position: relative;
+	top: 50px;
+	left: 50px;
+	&::before {
+		position: absolute;
+		content: url("../img/gr-back.png");
+		top: 0;
+		left: 0;
+		z-index: 0;
+	}
+}
+.svg__bg {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+	color: #fff;
+	transition: 0.5s;
+}
+.svg__icon {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	color: #000;
+	margin: auto;
+	z-index: 20;
+	transition: 0.5s;
+}
+.svg__wrapper:hover {
+	.svg__icon {
+		color: #fff;
+	}
+	.svg__bg {
+		color: transparent;
+	}
+}
