@@ -1,4 +1,70 @@
-h1 {
-    color: #639;
-		text-align: center;
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+	color: #fff;
+	font-family: sans-serif;
+}
+.fixed-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%; 
+}
+.header__container {
+	display: flex;
+	flex-direction: column;
+	max-width: 1440px;
+	margin: 0 auto;
+}
+.header {
+	color: #fff;
+	font-family: sans-serif;
+	&__first {
+		background-color: #6999e0;
+		height: 50px;
+		&-body {
+			padding-top:15px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+	}
+	&__options {
+		display: flex;
+		flex-direction: row;
+		column-gap: 30px;
+	}
+	&__phone-info {
+		display: flex;
+		column-gap: 20px;
+	}
+ 
+	&__second {
+		background-color: #7000e6;
+		postion: fixed;
+		z-index: 100;
+		&-body {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			height: 80px;
+			column-gap: 30px;
+		}
+	}
+	
+	&__search {
+		flex: 1 1 auto;
+		&-input {
+				display: flex;
+				flex-direction: row;
+		}
+		input {
+			flex: 1 1 auto;
+		}
+	}
+	
 }

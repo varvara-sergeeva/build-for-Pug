@@ -79,3 +79,17 @@ document.addEventListener("DOMContentLoaded", function () {
 		})
 	}
 });
+
+
+
+window.addEventListener('scroll', (event) => {
+	console.log("scroll window!!");
+
+	if (window.scrollTo >= 150) {
+		document.querySelector('.header__second').classList.add('fixed-header');
+		console.log("header add class");
+	} else {
+		document.querySelector('.header__second').classList.remove('fixed-header');
+		console.log("header REMOOOVE class");
+	}
+});

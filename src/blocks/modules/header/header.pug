@@ -1,3 +1,46 @@
-.header 
-  .header__container 
-      h1 This is header
+header.header
+	nav.header__nav
+	
+		.header__first
+			.header__container.header__first-body
+				.header__options
+					.header__location 
+						svg(width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg')
+							path(d='M8 8.5C9.10457 8.5 10 7.60457 10 6.5C10 5.39543 9.10457 4.5 8 4.5C6.89543 4.5 6 5.39543 6 6.5C6 7.60457 6.89543 8.5 8 8.5Z' stroke='white' stroke-linecap='round' stroke-linejoin='round')
+							path(d='M13 6.5C13 11 8 14.5 8 14.5C8 14.5 3 11 3 6.5C3 5.17392 3.52678 3.90215 4.46447 2.96447C5.40215 2.02678 6.67392 1.5 8 1.5C9.32608 1.5 10.5979 2.02678 11.5355 2.96447C12.4732 3.90215 13 5.17392 13 6.5V6.5Z' stroke='white' stroke-linecap='round' stroke-linejoin='round')
+						span Питер
+					a.header__payment(href="#payment") Оплата
+					a.header__delivery(href="#delivery") Доставка
+				.header__phone-info
+					a.header__phone(href='tel:78123176207')
+						span 8 (812) 317-62-07
+					.header__phone-time
+						span С 9:00 до 23:00
+	
+		.header__second
+			.header__container.header__second-body
+				a.header__logo(href="#main-page") LOGO
+
+				.header__menu
+					.menu__burger
+						span
+						span Каталог
+
+				.header__search
+					form.header__search-input
+						input
+						button(type='reset') -
+						button(type='submit') +
+
+				.header__icons
+					a.header__login(href="#login")
+						svg(width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg')
+							path#svg_1.selected(d='M9.69 10.863a4.5 4.5 0 1 1 4.62 0A7.503 7.503 0 0 1 19.5 18c0 1.509-3.403 2.5-7.5 2.5-4.146 0-7.5-.964-7.5-2.5a7.503 7.503 0 0 1 5.19-7.137zM12 10.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zm0 9c3.5 0 6.5-.874 6.5-1.5a6.5 6.5 0 1 0-13 0c0 .65 2.955 1.5 6.5 1.5z' fill='#ffffff' fill-opacity='1' stroke='white' stroke-width='1' stroke-linecap='round' stroke-linejoin='round')
+
+					a.header__favorites(href="#favorites")
+						svg(width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg')
+							path#svg_1.selected(d='M9.69 10.863a4.5 4.5 0 1 1 4.62 0A7.503 7.503 0 0 1 19.5 18c0 1.509-3.403 2.5-7.5 2.5-4.146 0-7.5-.964-7.5-2.5a7.503 7.503 0 0 1 5.19-7.137zM12 10.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zm0 9c3.5 0 6.5-.874 6.5-1.5a6.5 6.5 0 1 0-13 0c0 .65 2.955 1.5 6.5 1.5z' fill='#ffffff' fill-opacity='1' stroke='white' stroke-width='1' stroke-linecap='round' stroke-linejoin='round')
+
+					a.header__cart(href="#cart")
+						svg(width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg')
+							path#svg_1.selected(d='M9.69 10.863a4.5 4.5 0 1 1 4.62 0A7.503 7.503 0 0 1 19.5 18c0 1.509-3.403 2.5-7.5 2.5-4.146 0-7.5-.964-7.5-2.5a7.503 7.503 0 0 1 5.19-7.137zM12 10.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zm0 9c3.5 0 6.5-.874 6.5-1.5a6.5 6.5 0 1 0-13 0c0 .65 2.955 1.5 6.5 1.5z' fill='#ffffff' fill-opacity='1' stroke='white' stroke-width='1' stroke-linecap='round' stroke-linejoin='round')

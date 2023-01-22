@@ -7753,6 +7753,7 @@ bem-tools-create@bem-tools/bem-tools-create:
     imagemin-pngquant: ~9.0.0
     imagemin-webp: ^6.0.0
     imagemin-zopfli: ^7.0.0
+    jquery: ^3.6.3
     lint-staged: ^12.3.5
     postcss: ^8.4.8
     postcss-scss: ^4.0.3
@@ -9454,6 +9455,13 @@ bem-tools-create@bem-tools/bem-tools-create:
   bin:
     jpeg-recompress: cli.js
   checksum: 4a8b0f57c742bc97e54b01f4f95bfd1f4d95844f7443cc1bbc1146b016d7c7d386ffd0581dfdbe29090c106a1c22eea8f88ebe7534cf738f1bf7f3b30c89c6db
+  languageName: node
+  linkType: hard
+
+"jquery@npm:^3.6.3":
+  version: 3.6.3
+  resolution: "jquery@npm:3.6.3"
+  checksum: 0fd366bdcaa0c84a7a8751ce20f8192290141913978b5059574426d9b01f4365daa675f95aab3eec94fd794d27b08d32078a2236bef404b8ba78073009988ce6
   languageName: node
   linkType: hard
 
